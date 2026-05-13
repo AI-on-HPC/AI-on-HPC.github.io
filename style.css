@@ -439,3 +439,52 @@ strong {
         break-inside: avoid;
     }
 }
+
+/* Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+  }
+
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  tr:hover {
+    background-color: #e8f5e8;
+  }
+
+  .time-cell {
+    font-weight: bold;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+
+  .topic-cell {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .presenter-cell {
+    color: #555;
+  }
+  
+	.blurred {
+		filter: blur(3px);
+		transition: filter 0.3s ease;
+	}
