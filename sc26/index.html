@@ -36,7 +36,6 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
         <li class="nav-item"><a class="nav-link" href="#call">Call for Papers</a></li>
         <li class="nav-item"><a class="nav-link" href="#topics">Topics</a></li>
         <li class="nav-item"><a class="nav-link" href="#dates">Dates</a></li>
@@ -51,34 +50,28 @@
 <div class="container-fluid col-4">
 
 	<!-- spacer -->
-	<!-- Accepted!
+	
   <section id="spacer" class="mb-5">
-	<span class="text-danger">[Currently under evaluation]</span>
+	<div class="alert alert-warning" role="alert">
+	  Please note: SC26 is currently planned as an in-person event only! (Last updated June 13)
+	</div>
   </section>
-	-->
 
+	
+  <!-- Call for Papers -->
   <!-- Workshop Overview -->
-  <section id="overview" class="mb-5">
-    <h2>Workshop Overview</h2>
+  <section id="call" class="mb-5">
+    <h2>Call for Papers</h2>
 
     <p>How can AI workloads be engineered for optimal performance in modern HPC environments?<p>
     <p>
       The rapid advancement of Artificial Intelligence (AI) and Machine Learning (ML) has positioned High-Performance Computing (HPC) systems as indispensable platforms for developing, training, and executing these workloads. However, the architectural complexity and batch-oriented design of traditional HPC systems pose unique challenges distinct from those encountered in resource-elastic environments such as clouds. As AI models, such as large language, vision foundation, and multimodal architecture continue to grow in scale, their performance and scalability increasingly depend on HPC-grade architectures, advanced networking, and software engineering practices. The emergence of measurement-driven performance engineering and hybrid AI/HPC workflows is reshaping how large-scale computation is designed, benchmarked, and optimized.</br>
 	  The parallelization characteristics, input/output requirements, and dynamic workflows of AI workloads demand innovative techniques for efficient utilization of HPC resources. Moreover, the performance engineering of such workloads is crucial to achieve scalability, portability, and reproducibility across diverse system architectures.
     </p>
-  </section>
-  <!-- Call for Papers -->
-  <section id="call" class="mb-5">
-    <h2>Call for Papers</h2>
     <p>
       We invite submissions presenting experimental results, architectural insights, performance studies, 
       and best practices related to AI/ML workloads on HPC systems.
     </p>
-    <ul>
-      <li>Full papers: 4-10 pages <span class="fw-lighter">(ACM style)</span></li>
-      <li>Lightning talks: 1-page abstract <span class="fw-lighter">(excluded from proceedings)</span></li>
-      <li>Proceedings will follow SC guidelines</li>
-    </ul>
   </section>
   <!-- Topics of Interest -->
   <section id="topics" class="mb-5">
@@ -113,11 +106,15 @@
   <!-- Submission Information -->
   <section id="submission" class="mb-5">
     <h2>Submission Information</h2>
-    <p>
-      Submissions must be in <a target="_blank" href="https://www.acm.org/publications/proceedings-template">ACM two-column format</a> (4-10 pages for full papers).</br>
-      All submissions should include an <a target="_blank" href="https://sc26.supercomputing.org/program/papers/reproducibility-appendices-badges/">artifact description</a> appendix (AD),</br>
-	  and optionally participate in the <a target="_blank" href="https://sc26.supercomputing.org/program/papers/reproducibility-appendices-badges/">artifact evaluation</a> process (AE).
-    </p>
+    <ul>
+      <li>Full papers should be 4-10 pages in two-collumn <span class="fw-lighter">(<a href="https://www.ieee.org/conferences/publishing/templates" target="_blank">IEEE style</a>)</span>.</li>
+	  <li>Lightning talks: 1-page abstract <span class="fw-lighter">(excluded from proceedings)</span>.</li>
+	  <li>All submissions should include an <a target="_blank" href="https://sc26.supercomputing.org/program/papers/reproducibility-appendices-badges/">artifact description</a> appendix (AD).</li>
+	  <li>Participating in the <a target="_blank" href="https://sc26.supercomputing.org/program/papers/reproducibility-appendices-badges/">artifact evaluation</a> process (AE) is encouraged.</li>
+	  <li>Bibliography, AD and AE appendices do not count against the page limit.</li>
+	  <li>The review process is double-anonymous (double-blind).</li>
+      <li>Please follow <a href="https://sc26.supercomputing.org/program/papers/" target="_blank">SC paper guidelines</a>.</li>
+    </ul>
 	<p>
 		<a class="btn btn-primary" href="https://submissions.supercomputing.org" role="button">Start Submission</a>
 	</p>
