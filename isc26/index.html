@@ -1,403 +1,435 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI on HPC Workshop 2026</title>
-    <link rel="stylesheet" href="../asset/css/isc26-style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI on HPC Workshop @ ISC 2026</title>
+  <link href="../asset/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <div class="container">
-            <div class="logo-section">
-                <!-- Uncomment and update when you have a logo -->
-              <img src="../asset/logo_isc_2026.png" alt="AI on HPC Workshop Logo" class="workshop-logo">
-                <h1>AI on HPC Workshop 2026</h1> 
-            </div>
-            <p class="subtitle">Performance Engineering, Challenges and Opportunities</p>
-            <p class="event-details">June 26, 2026, 9:00 a.m. – 6:00 p.m.</p>
-			<p class="event-details">CCH - Hall X6 - 1st Floor</p>
-            <p class="event-location">Hamburg, Germany</p>
-            <p class="conjunction">In conjunction with <a href="https://isc-hpc.com/submissions/workshop/" target="_blank">ISC High Performance 2026</a></p>
-        </div>
-    </header>
+<body class="bg-body-tertiary" data-bs-spy="scroll" data-bs-target="#sidebarNav" data-bs-offset="100" tabindex="0">
 
-    <nav class="sticky-nav">
-        <div class="container">
-            <ul>
-				<li><a href="#overview">Overview</a></li>
-				<li><a href="#program">Program</a></li>
-                <li><a href="#cfp">Call for Papers</a></li>
-                <li><a href="#topics">Topics</a></li>
-                <li><a href="#dates">Important Dates</a></li>
-                <li><a href="#submission">Submission</a></li>
-                <li><a href="#organizers">Organizers</a></li>
-                <li><a href="#contact">Contact</a></li>
+<!-- Sticky Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #08213c;">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <img src="../img/AIonHPC_logo_light.png" alt="AI on HPC Workshop Logo" height="40">
+      <div class="d-flex flex-column lh-sm">
+        <span class="fw-bold fs-5">AI on HPC</span>
+        <small class="text-white-50" style="font-size: .72rem;">Performance Engineering, Challenges &amp; Opportunities</small>
+      </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto gap-lg-1">
+        <li class="nav-item"><a class="nav-link rounded px-lg-2" href="#program">Program</a></li>
+        <li class="nav-item"><a class="nav-link rounded px-lg-2" href="#call">Call for Papers</a></li>
+        <li class="nav-item"><a class="nav-link rounded px-lg-2" href="#topics">Topics</a></li>
+        <li class="nav-item"><a class="nav-link rounded px-lg-2" href="#dates">Dates</a></li>
+        <li class="nav-item"><a class="nav-link rounded px-lg-2" href="#submission">Submission</a></li>
+        <li class="nav-item"><a class="nav-link rounded px-lg-2" href="#organizers">Organizers</a></li>
+        <li class="nav-item"><a class="nav-link rounded px-lg-2" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero / Intro -->
+<div class="bg-primary text-white">
+  <div class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-lg-8">
+        <p class="text-white-50 text-uppercase fw-semibold mb-2" style="font-size: .8rem; letter-spacing: .08em;">ISC 2026 Workshop · June 26, 2026 · 9:00 a.m. – 6:00 p.m.</p>
+        <h1 class="display-4 fw-bold mb-2">AI on HPC</h1>
+        <p class="lead text-white-50 mb-2">Performance Engineering, Challenges and Opportunities</p>
+        <p class="text-white-50 mb-1">CCH - Hall X6 - 1st Floor, Hamburg, Germany</p>
+        <p class="text-white-50 mb-4">In conjunction with <a href="https://isc-hpc.com/submissions/workshop/" target="_blank" class="text-white text-decoration-underline">ISC High Performance 2026</a></p>
+        <div class="d-flex flex-wrap gap-2">
+          <a class="btn btn-light fw-semibold" href="#submission">Start Submission</a>
+          <a class="btn btn-outline-light" href="#call">Call for Papers</a>
+        </div>
+      </div>
+      <div class="col-lg-4 d-none d-lg-block text-end">
+        <img src="../img/2026_ISC_logo.png" alt="ISC 2026" class="opacity-50 w-100">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Main Content -->
+<div class="container py-5">
+  <div class="row">
+
+    <!-- Sidebar (desktop only) -->
+    <div class="col-lg-3 d-none d-lg-block">
+      <nav id="sidebarNav" class="sticky-top" style="top: 90px;">
+        <ul class="nav flex-column">
+          <li class="nav-item"><a class="nav-link text-secondary px-0 py-1" href="#program">Program</a></li>
+          <li class="nav-item"><a class="nav-link text-secondary px-0 py-1" href="#call">Call for Papers</a></li>
+          <li class="nav-item"><a class="nav-link text-secondary px-0 py-1" href="#topics">Topics of Interest</a></li>
+          <li class="nav-item"><a class="nav-link text-secondary px-0 py-1" href="#dates">Important Dates</a></li>
+          <li class="nav-item"><a class="nav-link text-secondary px-0 py-1" href="#submission">Submission Information</a></li>
+          <li class="nav-item"><a class="nav-link text-secondary px-0 py-1" href="#organizers">Organizers</a></li>
+          <li class="nav-item"><a class="nav-link text-secondary px-0 py-1" href="#contact">Contact</a></li>
+        </ul>
+        <hr class="my-3">
+        <a class="btn btn-sm btn-primary w-100" href="https://ssl.linklings.net/conferences/isc_hpc/?page=Submit&id=AIonHPCPerformanceEngineeringChallengesandOpportunitiesSubmission&site=ischpc2026" target="_blank">Submit a Paper</a>
+      </nav>
+    </div>
+
+    <!-- Content -->
+    <div class="col-lg-9">
+
+      <!-- Program -->
+      <section id="program" class="mb-5 pb-4">
+        <h2 class="fw-bold mb-4">Program</h2>
+        <div class="card border-0 shadow-sm">
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-bordered mb-0">
+                <thead class="table-light">
+                  <tr>
+                    <th style="width: 120px;">Time</th>
+                    <th>Topic</th>
+                    <th style="width: 280px;">Presenter</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="time-cell fw-semibold">9:00–11:00</td>
+                    <td><strong>Invited Talk:</strong> performance inefficiencies in LLM fine-tuning</td>
+                    <td>Gokcen Kestor, Barcelona Supercomputing, Spain</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>PreLoRA: Hybrid Pre-training of Vision Transformers with Full Training and Low-Rank Adapters</td>
+                    <td>Murali Emani, Argonne National Laboratory, USA</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>MCast: Generalizing HPC Application Runtime Prediction</td>
+                    <td>Avani Wildani, Cloudflare</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td><strong>Panel Discussion:</strong> The Rise of HPC-Driven AI Factories Worldwide<br><strong>Panel Moderator:</strong> Vijeta Sharma, MIMER AI Factory, Sweden</td>
+                    <td>
+                      <ul class="mb-0">
+                        <li>Claudia Blaas-Schenner, AI Factory, Austria</li>
+                        <li>Thor Wikfeldt, MIMER AI Factory, Sweden</li>
+                        <li>Abdulrahman Azab, Norwegian AI Factory – Sigma2 AS, Norway</li>
+                        <li>Kerem Kayabay, HLRS/HammerHAI, Germany</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="fw-semibold">11:00–11:30</td>
+                    <td>☕ Coffee Break</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="fw-semibold">11:30–13:00</td>
+                    <td>An Autotuning-based Hyperparameter Optimization Framework for Mixed-kernel SVM Classifications in Science and Engineering</td>
+                    <td>Xingfu Wu, Argonne National Laboratory, USA</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>Resource-aware Computation-Communication Overlap for multi-GPU ML Workloads</td>
+                    <td>Minyu Cui, Chalmers University of Technology, Sweden</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>Optimizing Teacher-Student Partitioning for Scalable Knowledge Distillation on HPC Systems</td>
+                    <td>Adrian Perez Dieguez, Qualcomm, USA</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>LLMs in Performance Engineering: New Workflows for Autonomous Code Optimization</td>
+                    <td>Anja Gerbes, GWDG, Germany</td>
+                  </tr>
+                  <tr>
+                    <td class="fw-semibold">13:00–14:00</td>
+                    <td>🍲 Lunch Break</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="fw-semibold">14:00–16:00</td>
+                    <td><strong>Keynote:</strong> Challenges and Opportunities in Training Next-Generation Mixture of Expert Models on HPC Platforms</td>
+                    <td>Sajal Dash, Oak Ridge National Laboratory, USA</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>TiledAttention: a CUDA Tile SDPA Kernel for PyTorch</td>
+                    <td>Taimur Khan, UFZ, Germany</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>Performance Engineering for the SEODA Project for CASPIr <em>(Lightning Talk)</em></td>
+                    <td>Buket Benek Gursoy, Irish Centre for High-End Computing, Ireland</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>JumpLM: Simultaneous Visualization of Hardware and LLM Metrics for a Joint Configuration Tuning</td>
+                    <td>Lena Jurkschat, ScaDS.AI, Germany</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>AI Application Benchmarking: Power-Aware Performance Analysis for Vision and Language Models</td>
+                    <td>Lukas Schröder, NHR@FAU, Germany</td>
+                  </tr>
+                  <tr>
+                    <td class="fw-semibold">16:00–18:00</td>
+                    <td>☕ Coffee Break / open discussions</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call for Papers -->
+      <section id="call" class="mb-5 pb-4">
+        <h2 class="fw-bold mb-1">Call for Papers</h2>
+        <p class="text-primary fw-semibold mb-4">How can AI workloads be engineered for optimal performance in modern HPC environments?</p>
+
+        <div class="card border-0 shadow-sm mb-4">
+          <div class="card-body">
+            <p class="mb-3">
+              The rapid advancement of Artificial Intelligence (AI) and Machine Learning (ML) has positioned High-Performance Computing (HPC) systems as indispensable platforms for developing, training, and executing these workloads. However, the architectural complexity and batch-oriented design of traditional HPC systems pose unique challenges distinct from those encountered in resource-elastic environments such as clouds.
+            </p>
+            <p class="mb-3">
+              The parallelization characteristics, input/output requirements, and dynamic workflows of AI workloads demand innovative techniques for efficient utilization of HPC resources. Moreover, the performance engineering of such workloads is crucial to achieve scalability, portability, and reproducibility across diverse system architectures.
+            </p>
+            <p class="mb-3">
+              This workshop aims to bring together researchers, practitioners, and system developers to discuss engineering challenges, performance optimization, and emerging opportunities at the intersection of AI and HPC. It invites among others, papers that present experimental results, architectural insights, performance studies, and best practices advancing the convergence of these domains.
+            </p>
+            <p class="mb-3">
+              We invite submissions of original research papers, case studies, and experience reports that address the challenges and opportunities at the intersection of AI/ML and HPC. The papers submitted to this workshop will be published in LNCS, Springer.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Topics of Interest -->
+      <section id="topics" class="mb-5 pb-4">
+        <h2 class="fw-bold mb-4">Topics of Interest</h2>
+        <p class="text-muted mb-4">We welcome submissions on the following topics, including but not limited to:</p>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <h3 class="fw-bold h6 mb-2">Workload Characterization</h3>
+                <ul class="mb-0 small">
+                  <li>Characterizing AI/ML workloads on HPC systems</li>
+                  <li>Data preparation for AI/ML workload on HPC</li>
+                  <li>Hybrid workloads on HPC systems</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <h3 class="fw-bold h6 mb-2">Performance &amp; Optimization</h3>
+                <ul class="mb-0 small">
+                  <li>Parallelization strategies for AI/ML</li>
+                  <li>Performance optimization of AI/ML frameworks on HPC</li>
+                  <li>Efficient inference of LLMs on HPC</li>
+                  <li>Cross-platform portability and reproducibility</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <h3 class="fw-bold h6 mb-2">Infrastructure &amp; Systems</h3>
+                <ul class="mb-0 small">
+                  <li>AI factories and end-to-end pipelines</li>
+                  <li>Next-generation HPC systems for AI/ML</li>
+                  <li>Best practices for integrating ML/AI into HPC</li>
+                  <li>Specialized AI/ML frameworks for HPC</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <h3 class="fw-bold h6 mb-2">Resource Management</h3>
+                <ul class="mb-0 small">
+                  <li>Resource allocation and scheduling for AI/ML workloads</li>
+                  <li>Energy efficiency and power management</li>
+                  <li>DevOps and MLOps for HPC-AI/ML</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <h3 class="fw-bold h6 mb-2">Applications</h3>
+                <ul class="mb-0 small">
+                  <li>HPC-AI/ML convergence for scientific applications</li>
+                  <li>AI-enhanced HPC simulations</li>
+                  <li>Industrial AI/ML on HPC</li>
+                  <li>Collaborative and interactive AI/ML on HPC</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <h3 class="fw-bold h6 mb-2">Evaluation &amp; Benchmarking</h3>
+                <ul class="mb-0 small">
+                  <li>HPC-AI/ML benchmarking and evaluation</li>
+                  <li>Performance studies and best practices</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Important Dates -->
+      <section id="dates" class="mb-5 pb-4">
+        <h2 class="fw-bold mb-4">Important Dates</h2>
+        <div class="card border-0 shadow-sm">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center py-2 border-bottom">
+              <span class="text-muted">Submission Deadline (firm)</span>
+              <span class="fw-semibold" style="color:#AA0000">March 15, 2026 <span class="badge text-bg-secondary ms-1">AOE</span></span>
+            </div>
+            <div class="d-flex justify-content-between align-items-center py-2 border-bottom">
+              <span class="text-muted">Notification of Acceptance</span>
+              <span class="fw-semibold">April 16, 2026</span>
+            </div>
+            <div class="d-flex justify-content-between align-items-center py-2 border-bottom">
+              <span class="text-muted">Early-bird registration Deadline</span>
+              <span class="fw-semibold">May 6, 2026 <span class="badge text-bg-secondary ms-1">AOE</span></span>
+            </div>
+            <div class="d-flex justify-content-between align-items-center py-2">
+              <span class="text-muted">Camera-Ready Deadline</span>
+              <span class="fw-semibold">May 11, 2026 <span class="badge text-bg-secondary ms-1">AOE</span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Submission Information -->
+      <section id="submission" class="mb-5 pb-4">
+        <h2 class="fw-bold mb-4">Submission Information</h2>	
+        <div class="card border-0 shadow-sm mb-3">
+          <div class="card-body">
+			  <li class="d-flex gap-2 mb-3">
+				<span class="text-primary fw-bold">→</span>
+				<span><strong>Format:</strong> LNCS (Lecture Notes in Computer Science) format</span>
+			  </li>
+			  <li class="d-flex gap-2 mb-3">
+				<span class="text-primary fw-bold">→</span>
+				<span><strong>Length:</strong> 6 to 12 pages for full papers (including a bibliography and appendices)</span>
+			  </li>
+			  <li class="d-flex gap-2 mb-3">
+				<span class="text-primary fw-bold">→</span>
+				<span><strong>Lightning Talks:</strong> Maximum 1 page abstract (talks excluded from publication)</span>
+			  </li>
+			  <li class="d-flex gap-2 mb-3">
+				<span class="text-primary fw-bold">→</span>
+				<span><strong>Portal:</strong> <a href="https://ssl.linklings.net/conferences/isc_hpc/?page=Submit&id=AIonHPCPerformanceEngineeringChallengesandOpportunitiesSubmission&site=ischpc2026" target="_blank">ISC Submission portal</a></span>
+			  </li>
+			  <li class="d-flex gap-2 mb-3">
+				<span class="text-primary fw-bold">→</span>
+				<span>Submissions should be original and not previously published</span>
+			  </li>
+			  <li class="d-flex gap-2">
+				<span class="text-primary fw-bold">→</span>
+				<span>Download LNCS template from <a href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines" target="_blank">Springer</a></span>
+			  </li>
+			  <li class="d-flex gap-2">
+				<span class="text-primary fw-bold">→</span>
+				<span>Submissions may be either single-blind or double-blind and authors can decide whether to anonymise their names and affiliations.</span>
+			  </li>
+			  <li class="d-flex gap-2">
+				<span class="text-primary fw-bold">→</span>
+				<span>For questions about submissions, please contact the General chairs.</span>
+			  </li>
+          </div>
+        </div>
+        <a class="btn btn-primary btn-lg px-4" href="https://ssl.linklings.net/conferences/isc_hpc/?page=Submit&id=AIonHPCPerformanceEngineeringChallengesandOpportunitiesSubmission&site=ischpc2026" target="_blank" role="button">Start Submission →</a>
+      </section>
+
+      <!-- Organizers -->
+      <section id="organizers" class="mb-5 pb-4">
+        <h2 class="fw-bold mb-4">Workshop Organization</h2>
+
+		<h3 class="fw-bold h5 mb-3">General Chairs</h3>
+			<ul class="list-unstyled mb-0">
+			  <li class="mb-2"><a href="https://www.ghiasvand.net/" target="_blank" class="text-decoration-none">Dr. Siavash Ghiasvand</a> — Dresden University of Technology, ScaDS.AI Dresden/Leipzig, Germany</li>
+			  <li class="mb-2"><a href="https://www.linkedin.com/in/dr-vijeta-sharma-364871100/" target="_blank" class="text-decoration-none">Dr. Vijeta Sharma</a> — MIMER AI Factory, Sweden</li>
+			  <li class="mb-5"><a href="https://www.linkedin.com/in/dr-ajeet-ram-pathak-9bb609a0/" target="_blank" class="text-decoration-none">Dr. Ajeet Ram Pathak</a> — Norwegian University of Science and Technology (NTNU), Norway</li>
+			</ul>
+
+		<h3 class="fw-bold h5 mb-3">Program Chairs</h3>
+			<ul class="list-unstyled mb-0">
+			  <li class="mb-2">Dr. Paramita Mirza — Fraunhofer IIS, Germany</li>
+			  <li class="mb-2">Dr. Taras Lazariv — ScaDS.AI Dresden/Leipzig, Germany</li>
+			  <li class="mb-2">Prof. Dr. Faouzi Alaya Cheikh — Norwegian University of Science and Technology, Norway</li>
+			  <li class="mb-5">Dr. Ernst Gunnar Gran — Norwegian University of Science and Technology, Norway</li>
+			</ul>
+
+        <h3 class="fw-bold h5 mb-3">Program Committee</h3>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2">Prof. Victor Calo — Curtin University, Australia</li>
+              <li class="mb-2">Prof. Florina M. Ciorba — University Basel, Switzerland</li>
+              <li class="mb-2">Dr. Jens Domme — RIKEN, Japan</li>
+              <li class="mb-2">Dr. Christian Engelmann — Oak Ridge National Laboratory, USA</li>
+              <li class="mb-2">Robert Henschel — Indiana University, USA</li>
+              <li class="mb-2">Dr. Rene Jäkel — Dresden University of Technology, ScaDS.AI Dresden/Leipzig, Germany</li>
+              <li class="mb-2">Dr. Thor Wikfeldt — RISE, Sweden</li>
+              <li class="mb-2">Neringa Jurenaite — Dresden University of Technology, ScaDS.AI Dresden/Leipzig, Germany</li>
+              <li class="mb-2">Prof. Julian Kunkel — University of Göttingen / GWDG, Germany</li>
+              <li class="mb-2">Prof. Chin-Chi Kuo — China Medical University Hospital, Taiwan</li>
+              <li class="mb-2">Prof. Sarah Neuwirth — Johannes Gutenberg University Mainz, Germany</li>
+              <li class="mb-2">Marlon Tobaben — CSC, LUMI AI Factory, Finland</li>
+              <li class="mb-5">Dr. Yonglei Wang — Linköping University, Sweden</li>
             </ul>
-        </div>
-    </nav>
 
-    <main class="container">
-		
-        <section id="overview" class="section">
-            <h2>Workshop Overview</h2>
-            <div class="highlight-box">
-                <p><strong>How can AI workloads be engineered for optimal performance in modern HPC environments?</strong></p>
-            </div>
-            <p>The rapid advancement of Artificial Intelligence (AI) and Machine Learning (ML) has positioned High-Performance Computing (HPC) systems as indispensable platforms for developing, training, and executing these workloads. However, the architectural complexity and batch-oriented design of traditional HPC systems pose unique challenges distinct from those encountered in resource-elastic environments such as clouds.</p>
-            
-            <p>The parallelization characteristics, input/output requirements, and dynamic workflows of AI workloads demand innovative techniques for efficient utilization of HPC resources. Moreover, the performance engineering of such workloads is crucial to achieve scalability, portability, and reproducibility across diverse system architectures.</p>
-            
-            <p>This workshop aims to bring together researchers, practitioners, and system developers to discuss engineering challenges, performance optimization, and emerging opportunities at the intersection of AI and HPC. It invites among others, papers that present experimental results, architectural insights, performance studies, and best practices advancing the convergence of these domains.</p>
-        </section>
+        <h3 class="fw-bold h5 mb-3">Media Chair</h3>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-5"><a href="https://beyzacavusoglu.github.io/" target="_blank" class="text-decoration-none">Beyza Çavuşoğlu</a></li>
+			</ul>
+      </section>
 
-        <section id="program" class="section">
-            <h2>Program (draft)</h2>
+      <!-- Contact -->
+      <section id="contact" class="mb-5 pb-4">
+        <h2 class="fw-bold mb-4">Contact</h2>
+            <p class="mb-2">For questions, please contact the General Chairs.</p>
 
-		<table style="border: 1px solid black; border-collapse: collapse;">
-		  <tr>
-			<th>Time</th>
-			<th>Topic</th>
-			<th>Presenter</th>
-		  </tr>
-		  <tr>
-			<td class="time-cell">9:00-11:00</td>
-			<td class="topic-cell"><strong>Invited Talk:</strong> performance inefficiencies in LLM fine-tuning</td>
-			<td class="presenter-cell">Gokcen Kestor, Barcelona Supercomputing, Spain</td>
-		  </tr>
-		  <tr>
-			<td class="time-cell"></td>
-			<td class="topic-cell">PreLoRA: Hybrid Pre-training of Vision Transformers with Full Training and Low-Rank Adapters</td>
-			<td class="presenter-cell">Murali Emani, Argonne National Laboratory, USA</td>
-		  </tr>
-		  <tr>
-			<td class="time-cell"></td>
-			<td class="topic-cell">MCast: Generalizing HPC Application Runtime Prediction</td>
-			<td class="presenter-cell">Avani Wildani, Cloudflare</td>
-		  </tr>
-		  <tr>
-			<td class="time-cell"></td>
-			<td class="topic-cell"><strong>Panel Discussion:</strong> The Rise of HPC-Driven AI Factories Worldwide<br>
-			 <strong>Panel Moderator:</strong> Vijeta Sharma, MIMER AI Factory, Sweden
-			</td>
-			<td class="presenter-cell">
-				<ul>
-					<li>Claudia Blaas-Schenner, AI Factory, Austria</li>
-					<li>Thor Wikfeldt, MIMER AI Factory, Sweden</li>
-					<li>Abdulrahman Azab, Norwegian AI Factory – Sigma2 AS, Norway</li>					
-					<li>Kerem Kayabay, HLRS/HammerHAI, Germany</li>
-					
-				</ul>
-			</td>
-		  </tr>
-		  <tr>
-			<td class="time-cell">11:00-11:30</td>
-			<td class="topic-cell">☕ Coffee Break</td>
-			<td class="presenter-cell"></td>
-		  </tr>
-		  <tr>
-			<td class="time-cell">11:30-13:00</td>
-			<td class="topic-cell">An Autotuning-based Hyperparameter Optimization Framework for Mixed-kernel SVM Classifications in Science and Engineering</td>
-			<td class="presenter-cell">Xingfu Wu, Argonne National Laboratory, USA</td>
-		  </tr>
-		  <tr>
-			<td class="time-cell"></td>
-			<td class="topic-cell">Resource-aware Computation-Communication Overlap for multi-GPU ML Workloads</td>
-			<td class="presenter-cell">Minyu Cui, Chalmers University of Technology, Sweden</td>
-		  </tr>
-		  <tr>
-			<td class="time-cell"></td>
-			<td class="topic-cell">Optimizing Teacher-Student Partitioning for Scalable Knowledge Distillation on HPC Systems</td>
-			<td class="presenter-cell">Adrian Perez Dieguez, Qualcomm, USA</td>
-		  </tr>
-		  <tr>
-			<td class="time-cell"></td>
-			<td class="topic-cell">LLMs in Performance Engineering: New Workflows for Autonomous Code Optimization</td>
-			<td class="presenter-cell">Anja Gerbes, GWDG, Germany</td>
-		  </tr>
-		  <tr>
-			<td class="time-cell">13:00-14:00</td>
-			<td class="topic-cell">🍲 Lunch Break</td>
-			<td class="presenter-cell"></td>
-		  </tr>
-		  <tr>
-			<td class="time-cell">14:00-16:00</td>
-			<td class="topic-cell"><strong>Keynote:</strong> Challenges and Opportunities in Training Next-Generation Mixture of Expert Models on HPC Platforms</td>
-			<td class="presenter-cell">Sajal Dash, Oak Ridge National Laboratory, USA</td>
-		  </tr>
-		  <tr>
-			<td class="time-cell"></td>
-			<td class="topic-cell">TiledAttention: a CUDA Tile SDPA Kernel for PyTorch</td>
-			<td class="presenter-cell">Taimur Khan, UFZ, Germany</td>
-		  </tr>
-		  <tr>
-			<td class="time-cell"></td>
-			<td class="topic-cell">Performance Engineering for the SEODA Project for CASPIr <i>(Lightning Talk)</i></td>
-			<td class="presenter-cell">Buket Benek Gursoy, Irish Centre for High-End Computing, Ireland</td>
-		  </tr>
-		  <tr>
-			<td class="time-cell"></td>
-			<td class="topic-cell">JumpLM: Simultaneous Visualization of Hardware and LLM Metrics for a Joint Configuration Tuning</td>
-			<td class="presenter-cell">Lena Jurkschat, ScaDS.AI, Germany</td>
-		  </tr>
-		  <tr>
-			<td class="time-cell"></td>
-			<td class="topic-cell">AI Application Benchmarking: Power-Aware Performance Analysis for Vision and Language Models</td>
-			<td class="presenter-cell">Lukas Schröder, NHR@FAU, Germany</td>
-		  </tr>
-		  <tr>
-			<td class="time-cell">16:00-18:00</td>
-			<td class="topic-cell">☕ Coffee Break / open discussions</td>
-			<td class="presenter-cell"></td>
-		  </tr>
-		</table>
-			
-        </section>
+      </section>
 
-        <section id="cfp" class="section">
-            <h2>Call for Papers</h2>
-            <p>We invite submissions of original research papers, case studies, and experience reports that address the challenges and opportunities at the intersection of AI/ML and HPC.The papers submitted to this workshop will be published in LNCS, Springer. </p>
-          
-            <div class="info-box">
-                <h3>Submission Guidelines</h3>
-                <ul>
-                    <li><strong>Format:</strong> LNCS (Lecture Notes in Computer Science) format</li>
-                    <li><strong>Length:</strong> 6 to 12 pages for full papers (including a bibliography and appendices)</li>
-                    <li><strong>Lightning Talks:</strong> Maximum 1 page abstract (talks excluded from publication)</li>
-                    <li><strong>Portal:</strong> <a href="https://ssl.linklings.net/conferences/isc_hpc/?page=Submit&id=AIonHPCPerformanceEngineeringChallengesandOpportunitiesSubmission&site=ischpc2026" target="_blank">ISC Submission portal</a> </li>
-                    <li>Submissions should be original and not previously published</li>
-                    <li>Download LNCS template from <a href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines" target="_blank">Springer</a></li>
-                </ul>
-            </div>
-        </section>
+    </div>
+  </div>
+</div>
 
-        <section id="topics" class="section">
-            <h2>Topics of Interest</h2>
-            <p>We welcome submissions on the following topics, including but not limited to:</p>
-            
-            <div class="topics-grid">
-                <div class="topic-card">
-                    <h3>Workload Characterization</h3>
-                    <ul>
-                        <li>Characterizing AI/ML workloads on HPC systems</li>
-                        <li>Data preparation for AI/ML workload on HPC</li>
-                        <li>Hybrid workloads on HPC systems</li>
-                    </ul>
-                </div>
-                
-                <div class="topic-card">
-                    <h3>Performance & Optimization</h3>
-                    <ul>
-                        <li>Parallelization strategies for AI/ML</li>
-                        <li>Performance optimization of AI/ML frameworks on HPC</li>
-                        <li>Efficient inference of LLMs on HPC</li>
-                        <li>Cross-platform portability and reproducibility</li>
-                    </ul>
-                </div>
-                
-                <div class="topic-card">
-                    <h3>Infrastructure & Systems</h3>
-                    <ul>
-                        <li>AI factories and end-to-end pipelines</li>
-                        <li>Next-generation HPC systems for AI/ML</li>
-                        <li>Best practices for integrating ML/AI into HPC</li>
-                        <li>Specialized AI/ML frameworks for HPC</li>
-                    </ul>
-                </div>
-                
-                <div class="topic-card">
-                    <h3>Resource Management</h3>
-                    <ul>
-                        <li>Resource allocation and scheduling for AI/ML workloads</li>
-                        <li>Energy efficiency and power management</li>
-                        <li>DevOps and MLOps for HPC-AI/ML</li>
-                    </ul>
-                </div>
-                
-                <div class="topic-card">
-                    <h3>Applications</h3>
-                    <ul>
-                        <li>HPC-AI/ML convergence for scientific applications</li>
-                        <li>AI-enhanced HPC simulations</li>
-                        <li>Industrial AI/ML on HPC</li>
-                        <li>Collaborative and interactive AI/ML on HPC</li>
-                    </ul>
-                </div>
-                
-                <div class="topic-card">
-                    <h3>Evaluation & Benchmarking</h3>
-                    <ul>
-                        <li>HPC-AI/ML benchmarking and evaluation</li>
-                        <li>Performance studies and best practices</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+<!-- Footer -->
+<footer class="text-white-50 py-4" style="background-color: #08213c;">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center text-md-start">
+        <p class="mb-0 small">&copy; 2026 AI on HPC Workshop. All Rights Reserved.</p>
+      </div>
+      <div class="col-md-6 text-center text-md-end">
+        <a class="text-white-50 text-decoration-none small me-3" href="https://www.isc-hpc.com/" target="_blank">ISC High Performance 2026</a>
+        <a class="text-white-50 text-decoration-none small" href="https://www.linkedin.com/company/isc-workshop-ai-on-hpc" target="_blank">Follow on LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</footer>
 
-        <section id="dates" class="section dates-section">
-            <h2>Important Dates</h2>
-            <div class="dates-container">
-                <div class="date-item">
-                    <span class="date-label">Submission Deadline (firm):</span>
-                    <span class="date-value" style="color:#AA0000">March 15, 2026 (AOE)</span>
-					<span><s>March 02, 2026 (AOE)</s></span>
-                </div>
-                <div class="date-item">
-                    <span class="date-label">Notification of Acceptance:</span>
-                    <span class="date-value">April 16, 2026</span>
-					<span><s>April 13, 2026</s></span>
-                </div>
-                <div class="date-item">
-                    <span class="date-label">Early-bird registration Deadline:</span>
-                    <span class="date-value">May 6, 2026 (AOE)</span>
-					<span><a href="https://isc-hpc.com/attendance/registration/" target="_blank">more info</a></span>
-                </div>
-                <div class="date-item">
-                    <span class="date-label">Camera-Ready Deadline:</span>
-                    <span class="date-value">May 11, 2026 (AOE)</span>
-                </div>
-            </div>
-        </section>
-
-        <section id="submission" class="section">
-            <h2>Submission Information</h2>
-            <div class="info-box">
-                <p><strong>Submission Portal:</strong> Scientific contributions can be submitted via the <a href="https://ssl.linklings.net/conferences/isc_hpc/?page=Submit&id=AIonHPCPerformanceEngineeringChallengesandOpportunitiesSubmission&site=ischpc2026" target="_blank">ISC Submission portal</a>.</p>
-                
-				<p>Submissions may be either single-blind or double-blind and authors can decide whether to anonymise their names and affiliations. </p>
-				
-                <p>For questions about submissions, please contact the General chairs.</p>
-            </div>
-        </section>
-
-        <section id="organizers" class="section">
-            <h2>Workshop Organization</h2>
-            
-            <div class="organizers-section">
-                <h3>General Chairs</h3>
-                <div class="organizer-grid">
-                    <div class="organizer-card">
-                        <h4> <a href="https://www.ghiasvand.net/" target="_blank">Dr. Siavash Ghiasvand</a></h4>
-                        <p>Dresden University of Technology</p>
-                        <p>ScaDS.AI Dresden/Leipzig, Germany</p>
-                    </div>
-                    <div class="organizer-card">
-                        <h4><a href="https://www.linkedin.com/in/dr-vijeta-sharma-364871100/" target="_blank">Dr. Vijeta Sharma</a></h4>
-                        <p>MIMER AI Factory</p>
-                        <p>Sweden</p>
-                    </div>
-                    <div class="organizer-card">
-                        <h4> <a href="https://www.linkedin.com/in/dr-ajeet-ram-pathak-9bb609a0/" target="_blank"> Dr. Ajeet Ram Pathak</a></h4>
-                        <p>Norwegian University of Science and Technology (NTNU)</p>
-                        <p>Norway</p>
-                    </div>
-                </div>
-
-                <h3>Program Chairs</h3>
-                <div class="organizer-grid">
-                    <div class="organizer-card">
-                        <h4>Dr. Paramita Mirza</h4>
-                        <p>Fraunhofer IIS, Germany</p>
-                    </div>
-                    <div class="organizer-card">
-                        <h4>Dr. Taras Lazariv</h4>
-                        <p>ScaDS.AI Dresden/Leipzig, Germany</p>
-                    </div>
-                    <div class="organizer-card">
-                        <h4>Prof. Dr. Faouzi Alaya Cheikh</h4>
-                        <p>Norwegian University of Science and Technology, Norway</p>
-                    </div>
-                    <div class="organizer-card">
-                        <h4>Dr. Ernst Gunnar Gran</h4>
-                        <p>Norwegian University of Science and Technology, Norway</p>
-                    </div>
-                </div>
-
-                <h3>Program Committee</h3>
-                <div class="committee-list">
-                    <div class="committee-member">Prof. Victor Calo - Curtin University, Australia</div>
-                    <div class="committee-member">Prof. Florina M. Ciorba - University Basel, Switzerland</div>
-                    <div class="committee-member">Dr. Jens Domke - RIKEN, Japan</div>
-                    <div class="committee-member">Dr. Christian Engelmann - Oakridge National Laboratory, USA</div>
-                    <div class="committee-member">Robert Henschel - Indiana University, USA</div>
-                    <div class="committee-member">Dr. Rene Jäkel - Dresden University of Technology, ScaDS.AI Dresden/Leipzig, Germany</div>
-                    <div class="committee-member">Dr. Thor Wikfeldt - RISE, Sweden</div>
-                    <div class="committee-member">Neringa Jurenaite - Dresden University of Technology, ScaDS.AI Dresden/Leipzig, Germany</div>
-                    <div class="committee-member">Prof. Julian Kunkel - University of Göttingen / GWDG, Germany</div>
-                    <div class="committee-member">Prof. Chin-Chi Kuo - China Medical University Hospital, Taiwan</div>
-                    <div class="committee-member">Prof. Sarah Neuwirth - Johannes Gutenberg University Mainz, Germany</div>
-                    <div class="committee-member">Marlon Tobaben - CSC, LUMI AI Factory, Finland</div>                    
-                    <div class="committee-member">Dr. Yonglei Wang - Linköping University, Sweden</div>
-                </div>
-				<h3>Media Chair</h3>
-				<div class="info-box">
-                <h4><a href="https://beyzacavusoglu.github.io/" target="_blank">Beyza çavuşoğlu</a></h4>
-            </div>
-            </div>
-        </section>
-
-        <section id="contact" class="section">
-            <h2>Contact</h2>
-            <div class="info-box">
-                <p>For questions, please contact the General Chairs:</p>
-                <ul>
-                    <li><strong>Dr. Siavash Ghiasvand:</strong></li>
-                    <li><strong>Dr. Vijeta Sharma:</strong></li>
-                    <li><strong>Dr. Ajeet Ram Pathak:</strong></li>
-                </ul>
-            </div>
-            <div class="info-box">
-                <p>Follow us on <a href="https://www.linkedin.com/company/isc-workshop-ai-on-hpc/?viewAsMember=true" target="_blank">LinkedIn</a></p>
-            </div>
-        </section>        
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 AI on HPC Workshop. All Rights Reserved.</p>
-            <p>Part of <a href="https://www.isc-hpc.com/" target="_blank">ISC High Performance 2026</a></p>
-        </div>
-    </footer>
-
-    <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    const offset = 80;
-                    const targetPosition = target.offsetTop - offset;
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-        // Highlight active nav item on scroll
-        window.addEventListener('scroll', () => {
-            const sections = document.querySelectorAll('.section');
-            const navLinks = document.querySelectorAll('.sticky-nav a');
-            
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (window.pageYOffset >= sectionTop - 100) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href').slice(1) === current) {
-                    link.classList.add('active');
-                }
-            });
-        });
-    </script>
+<script src="../asset/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
